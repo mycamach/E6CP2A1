@@ -3,8 +3,7 @@
 # y no obtener errores ni warnings.
 
 def par(x)
-  return true if (x % 2).zero?
-  false
+  (x % 2).zero? ? true : false # <== APRENDER!!!
 end
 puts par(2)
 puts par(3)
