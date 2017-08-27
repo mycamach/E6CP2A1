@@ -6,8 +6,26 @@
 
 a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
 
-a.each do |i|
-  a.delete_if {|i| (i % 2).zero? }
+def array_even_ele(array)
+  array.each do
+    array.delete_if { |i| (i % 2).zero? }
+  end
 end
 
-print a
+print array_even_ele a
+
+def array_sum(array)
+  sum = 0
+  array.each { |i| sum += i }
+  puts sum
+end
+
+array_sum a
+
+def array_mean(array)
+	array.each { |i| array_sum() / array.size.to_f }
+end
+
+puts array_mean a
+
+# PENDIENTE 4
