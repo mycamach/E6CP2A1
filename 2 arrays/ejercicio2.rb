@@ -10,6 +10,24 @@
 #    invertir el orden de los elementos en un arreglo.
 
 a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+
 a.delete_at(-1)
-a.delete_at(0)
+
 print a, "\n"
+
+a.delete_at(0)
+
+print a, "\n"
+
+if a.length.odd?
+  a.delete_at(a.length / 2)
+else a.delete_at((a.length / 2) - 1)
+end
+
+print a, "\n"
+
+a.delete_at(-1) if a[-1] != 1
+
+print a, "\n"
+
+# PENDIENTE NUMERO 5
