@@ -6,7 +6,9 @@ Se tiene un arreglo de productos, se pide que el output sea:
 <div class='product'><p> Producto4 </p></div>
 =end
 
-products = %w(Producto1 Producto2 Producto3 Producto4)
+# %w(foo bar) is a shortcut for ["foo", "bar"]
+
+products = %w[Producto1 Producto2 Producto3 Producto4]
 
 html = ''
 products.each do |i|
