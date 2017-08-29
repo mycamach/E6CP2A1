@@ -6,3 +6,23 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+c = a + b
+d = (a - b) + (b - a)
+e = a & b
+
+print c, "\n"
+print d, "\n"
+print e, "\n"
+
+b.each_with_index do | ele, i |
+  f = [a[i], b [i]]
+  print f
+end
+
+
+
+
+
+
+
