@@ -12,7 +12,7 @@ def array_even_ele(array)
   end
 end
 
-print array_even_ele a
+print array_even_ele (a)
 puts "\n"
 
 def array_sum(array)
@@ -32,7 +32,9 @@ array_mean a
 
 def array_plus_one(array)
   new_array = array.map { |i| i + 1 }
-  print new_array
+  print new_array, "\n"
 end
 
 array_plus_one(a)
+
+print a
