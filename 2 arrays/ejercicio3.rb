@@ -13,6 +13,7 @@ def array_even_ele(array)
 end
 
 print array_even_ele a
+puts "\n"
 
 def array_sum(array)
   sum = 0
@@ -23,9 +24,15 @@ end
 array_sum a
 
 def array_mean(array)
-	array.each { |i| array_sum() / array.size.to_f }
+  mean = array.inject { |sum, i| sum + i }.to_f / array.size
+  puts mean
 end
 
-puts array_mean a
+array_mean a
 
-# PENDIENTE 4
+def array_plus_one(array)
+  new_array = array.map { |i| i + 1 }
+  print new_array
+end
+
+array_plus_one(a)
