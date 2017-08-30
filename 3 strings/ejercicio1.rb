@@ -3,17 +3,12 @@
 # hint: El método .include? de un string busca si un caracter
 # o string dado está contenido en éste.
 
-def check_if_exists?(string, match)
+cadena = 'Hola Mundo!'
+caracter = 'h' # Preguntar cómo hacer que la h sea true if downcase or upcase
 
-	string.each do |i|
-		return true if i == string.include? |match|
+def check_if_exists?(string, match)
+  return true if string.include? match
+  false
 end
 
-false 
-
-end 
-
-cadena = 'Hola Mundo!'
-caracter = 'o'
-
-print check_if_exists? (cadena, caracter)
+print check_if_exists?(cadena, caracter)
