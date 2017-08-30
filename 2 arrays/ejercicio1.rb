@@ -21,4 +21,4 @@ arreglo.each_with_index do |ele, i|
   puts ele if (i % 2).zero?
 end
 
-#Considerando posición 0 como par. 
+# Considerando posicion 0 como par.
