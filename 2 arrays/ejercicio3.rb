@@ -12,7 +12,7 @@ def array_even_ele(array)
   end
 end
 
-print array_even_ele (a)
+print array_even_ele a
 puts "\n"
 
 def array_sum(array)
@@ -36,5 +36,3 @@ def array_plus_one(array)
 end
 
 array_plus_one(a)
-
-print a
