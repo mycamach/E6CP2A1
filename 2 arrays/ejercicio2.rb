@@ -30,4 +30,15 @@ a.delete_at(-1) if a[-1] != 1
 
 print a, "\n"
 
-# PENDIENTE NUMERO 5
+b = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+c = b.dup
+
+new_array = []
+
+b.length.times do
+  new_array << c[-1]
+  c.pop[-1]
+end
+
+print new_array, "\n"
+print b
