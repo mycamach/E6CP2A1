@@ -4,10 +4,10 @@
 # o string dado está contenido en éste.
 
 cadena = 'Hola Mundo!'
-caracter = 'h' # Preguntar cómo hacer que la h sea true if downcase or upcase
-
+caracter = 'o'
 def check_if_exists?(string, match)
-  return true if string.include? match
+  b = string.downcase
+  return true if b.include? match.downcase
   false
 end
 
