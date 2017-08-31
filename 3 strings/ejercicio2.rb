@@ -14,8 +14,8 @@ desafio_G9.map { |n| print "#{n} " if n.length > 5 }
 
 print "####################\n"
 
-desafio_G9_d = desafio_G9.map { |nombre| nombre.downcase }
-# Preguntar por el comentario de Rubocop
+desafio_G9_d = desafio_G9.map(&:downcase)
+
 
 print desafio_G9_d, "\n"
 print "####################\n"
