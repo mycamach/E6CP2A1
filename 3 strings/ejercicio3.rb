@@ -15,10 +15,13 @@ print c, "\n"
 print d, "\n"
 print e, "\n"
 
-a.each_with_index do |ele, i| # Aun no logro el nested array :/
-  f = a[i], b [i]
-  print f
+f = []
+
+a.each_with_index do |ele, i| # ele en este caso es a[i]
+  f << [ele, b [i]]
 end
+
+print f
 
 
 
